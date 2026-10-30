@@ -1,3 +1,4 @@
+import utils.session
 import json, sys, pathlib
 site = pathlib.Path((sys.argv[1] if len(sys.argv)>1 else "."))
 c = json.loads((site/"content.json").read_text())
