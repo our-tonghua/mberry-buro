@@ -116,7 +116,7 @@
     "company": "MBERRY BURO · Olha Malinko Design"
   },
   "form": {
-    "endpoint": "",
+    "endpoint": "https://formsubmit.co/ajax/t0n9hu4@email.com",
     "note": "Set endpoint to e.g. https://formsubmit.co/ajax/your@email.com to receive enquiries by email."
   }
 }
