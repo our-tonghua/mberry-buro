@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "MBERRY BURO — Interior Design, Renovation & Turnkey Projects",
+    "description": "MBERRY BURO by Olha Malinko Design: interior design, renovation, reconstruction and turnkey delivery for residential and commercial spaces. Prague, Europe, Ukraine and Dubai."
+  },
+  "brand": { "name": "MBERRY BURO", "tagline": "by Olha Malinko Design" },
+  "hero": {
+    "h1": "Renovation. Reconstruction. Turnkey Delivery.",
+    "sub": "From concept and technical documentation to permits, construction coordination, and a completed interior.",
+    "line1": "Residential & Commercial Spaces",
+    "line2": "International Project Experience",
+    "image": "img/hero.svg",
+    "imageAlt": "Placeholder illustration of a calm, light-filled living room. To be replaced with a photograph of a completed MBERRY BURO interior."
+  },
+  "projects": {
+    "heading": "Spaces We Create",
+    "items": [
+      { "name": "City Apartment", "type": "Residential", "category": "residential", "location": "Prague, Czech Republic",
+        "images": [
+          { "src": "img/p1-1.svg", "alt": "Living room with arched niche and tall window", "caption": "Living area" },
+          { "src": "img/p1-2.svg", "alt": "Kitchen with island and pendant lights", "caption": "Kitchen" },
+          { "src": "img/p1-3.svg", "alt": "Bedroom with upholstered headboard", "caption": "Main bedroom" },
+          { "src": "img/p1-4.svg", "alt": "Arched niche with stone vanity", "caption": "Bathroom detail" } ] },
+      { "name": "Family House", "type": "Residential", "category": "residential", "location": "Europe",
+        "images": [
+          { "src": "img/p2-1.svg", "alt": "Bright family living room", "caption": "Living room" },
+          { "src": "img/p2-2.svg", "alt": "Guest bedroom in warm sand tones", "caption": "Guest bedroom" },
+          { "src": "img/p2-3.svg", "alt": "Detail of a plaster arch and vanity", "caption": "Detail" } ] },
+      { "name": "Penthouse Residence", "type": "Residential", "category": "residential", "location": "Dubai, UAE",
+        "images": [
+          { "src": "img/p3-1.svg", "alt": "Graphite kitchen with island", "caption": "Kitchen" },
+          { "src": "img/p3-2.svg", "alt": "Living room in graphite tones", "caption": "Living room" },
+          { "src": "img/p3-3.svg", "alt": "Bedroom with low bed", "caption": "Bedroom" },
+          { "src": "img/p3-4.svg", "alt": "Arched niche detail", "caption": "Detail" } ] },
+      { "name": "Concept Showroom", "type": "Commercial · Retail", "category": "commercial", "location": "Ukraine",
+        "images": [
+          { "src": "img/p4-1.svg", "alt": "Showroom with display plinths and arch", "caption": "Showroom" },
+          { "src": "img/p4-2.svg", "alt": "Display counter detail", "caption": "Counter detail" },
+          { "src": "img/p4-3.svg", "alt": "Second view of the showroom", "caption": "Display area" } ] },
+      { "name": "Studio Office", "type": "Commercial · Office", "category": "commercial", "location": "Prague, Czech Republic",
+        "images": [
+          { "src": "img/p5-1.svg", "alt": "Office with long window and desks", "caption": "Open workspace" },
+          { "src": "img/p5-2.svg", "alt": "Office meeting area", "caption": "Meeting area" },
+          { "src": "img/p5-3.svg", "alt": "Reception detail", "caption": "Reception" } ] }
+    ]
+  },
+  "expertise": {
+    "heading": "A Comprehensive Approach to Space",
+    "intro": "MBERRY BURO is an interior design bureau led by Olha Malinko. We develop concepts, layouts and technical solutions, coordinate specialists, and support projects through implementation.",
+    "services": [
+      { "title": "Renovation & Reconstruction", "text": "Replanning and rebuilding existing spaces, from structural changes to final finishes." },
+      { "title": "Interior Design", "text": "Concepts, layouts, materials and lighting shaped around how you live or work." },
+      { "title": "Technical Documentation", "text": "Working drawings and specifications that contractors can build from." },
+      { "title": "Permits & Approvals", "text": "Coordinated with locally authorized architects, engineers and qualified specialists." },
+      { "title": "Procurement & FF&E", "text": "Furniture, fixtures and equipment selected, scheduled and ordered." },
+      { "title": "Design Supervision", "text": "Regular site oversight so the finished space matches the design." }
+    ],
+    "note": "Permits and regulated technical work are carried out in coordination with locally authorized architects, engineers and other qualified specialists."
+  },
+  "process": {
+    "heading": "One Project. From the First Idea to a Finished Space.",
+    "text": "We coordinate architecture, interiors, engineering, and construction as one project. The specialist team depends on the property, project scope, and local requirements.",
+    "steps": ["Concept & Layout", "Design & Working Drawings", "Engineering & Approvals", "Contractors & Procurement", "Design Supervision & Implementation"]
+  },
+  "packages": {
+    "heading": "Choose Your Way to Work",
+    "sub": "From one-off advice to comprehensive renovation and implementation support.",
+    "footnote": "Final pricing is determined after reviewing the property and project requirements. All listed prices are starting rates.",
+    "help": "Not sure which format suits your project? Share your floor plan, property size, photos, and a short brief. We’ll recommend the best approach.",
+    "items": [
+      { "id": "consultation", "num": "01", "name": "Consultation", "short": "Advice", "involvement": "High (self-managed)",
+        "prices": ["from 1,200 CZK / hour"],
+        "benefit": "Professional guidance for a specific design challenge.",
+        "bestFor": "Clients managing their own interiors who need expert input on a specific decision, room, or small apartment.",
+        "included": ["Advice on furniture, wall finishes, color, lighting, materials, and basic layout decisions.", "Clear recommendations for the next step; a one-off session or occasional support throughout a project."],
+        "receive": "Practical professional recommendations to make a particular decision with more confidence.",
+        "cta": "Book a Consultation" },
+      { "id": "design", "num": "02", "name": "Design Project", "short": "Design Package", "involvement": "High–Medium",
+        "prices": ["from USD 25 / m²"],
+        "benefit": "A complete design package for self-managed implementation.",
+        "bestFor": "Clients who want to arrange contractors and oversee implementation themselves, using a professionally prepared design package.",
+        "included": ["Concept development, space planning, and visualizations.", "Working drawings; material, furniture, and lighting selections; specifications and procurement schedules."],
+        "receive": "A coordinated set of design documentation and selections to share with contractors and suppliers.",
+        "note": "The final fee depends on property size, complexity, and documentation scope. Additional hourly consultations can be booked during the client-managed implementation stage.",
+        "cta": "Request a Design Project" },
+      { "id": "turnkey", "num": "03", "name": "Comprehensive / Turnkey Project", "short": "Full Project Cycle", "involvement": "Low",
+        "prices": ["Design projects from USD 25 / m²", "Reconstruction projects from USD 50 / m²"],
+        "benefit": "A coordinated project cycle, from concept through implementation.",
+        "bestFor": "Clients who need one coordinated team for design and implementation, especially when renovation, reconstruction, permits, or complex technical work is involved.",
+        "included": ["Concept, layouts, design and working documentation, plus coordination of engineering solutions.", "Permit and approval coordination with locally licensed/authorized professionals where required.", "Contractor and supplier selection/coordination, procurement, required connections as applicable, design supervision, and implementation support."],
+        "receive": "A single point of coordination for the agreed scope, from design decisions to professional oversight of implementation.",
+        "cta": "Discuss a Project" },
+      { "id": "staging", "num": "04", "name": "Home Staging & Styling", "short": "Property Preparation", "involvement": "Case-dependent",
+        "prices": ["from 1,200 CZK / hour"],
+        "benefit": "Prepare a property for sale, rental, photography, or move-in.",
+        "bestFor": "Apartment and house owners who want a more compelling presentation without a full renovation.",
+        "included": ["Furniture arrangement, spatial composition, lighting, textiles, decorative accessories, and styling.", "Recommendations suited to the property’s immediate purpose and audience."],
+        "receive": "A visually coherent, attractive space ready for presentation or use.",
+        "cta": "Request Home Staging" }
+    ]
+  },
+  "about": {
+    "heading": "Design Expertise Across Borders",
+    "text": "Led by Olha Malinko, MBERRY BURO brings a considered design approach to private homes and commercial spaces. We adapt each project to the requirements of its location and coordinate relevant specialists through the delivery process.",
+    "locations": ["Prague", "Czech Republic", "Europe", "Ukraine", "Dubai"],
+    "image": "img/about.svg",
+    "imageAlt": "Placeholder illustration of an interior detail. To be replaced with a portrait of Olha Malinko or an authentic project detail."
+  },
+  "contact": {
+    "heading": "Tell Us About Your Project",
+    "text": "Share a few details about your space and your goals. We’ll get in touch to discuss next steps.",
+    "email": "hello@mberryburo.com",
+    "phone": "+420 000 000 000",
+    "messenger": "https://wa.me/420000000000",
+    "instagram": "https://www.instagram.com/",
+    "company": "MBERRY BURO · Olha Malinko Design"
+  },
+  "form": {
+    "endpoint": "",
+    "note": "Set endpoint to e.g. https://formsubmit.co/ajax/your@email.com to receive enquiries by email."
+  }
+}

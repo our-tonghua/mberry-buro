@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MBERRY BURO</title>
+<meta name="description" content="MBERRY BURO by Olha Malinko Design: interior design, renovation, reconstruction and turnkey delivery for residential and commercial spaces. Prague, Europe, Ukraine and Dubai.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MBERRY BURO — Interior Design, Renovation & Turnkey Projects">
+<meta property="og:description" content="From concept and technical documentation to permits, construction coordination, and a completed interior.">
+<meta property="og:image" content="img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F7F6F3">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23222322'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia,serif' font-size='30' fill='%23F7F6F3'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Layout idea: editorial single column, wide image-led sections on a 1280px grid, thin graphite rules as structure */
+  --paper: #F7F6F3;
+  --white: #FDFCFA;
+  --ink: #222322;
+  --stone: #777670;
+  --rule: #D8D5CF;
+  --mist: #ECEAE5;
+  --serif: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+  --sans: "Jost", "Helvetica Neue", Arial, sans-serif;
+  --max: 1280px;
+  --gut: clamp(20px, 5vw, 64px);
+  --head-h: 76px;
+  color-scheme: light;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; animation: none !important; } }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-weight: 300; font-size: 17px; line-height: 1.65; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.08; margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
+h2 { font-size: clamp(2.1rem, 4.4vw, 3.6rem); }
+h3 { font-size: 1.55rem; }
+p { margin: 0; }
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--gut); }
+.eyebrow { font-size: .74rem; letter-spacing: .22em; text-transform: uppercase; color: var(--stone); font-weight: 400; display: flex; align-items: center; gap: 14px; }
+.eyebrow::after { content: ""; height: 1px; width: 48px; background: var(--rule); }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.skip { position: absolute; left: 12px; top: -60px; background: var(--ink); color: var(--paper); padding: 10px 16px; z-index: 100; }
+.skip:focus { top: 12px; }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 0 26px; border: 1px solid var(--ink); background: var(--ink); color: var(--paper); font: 400 .82rem/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: background .25s, color .25s; }
+.btn:hover { background: transparent; color: var(--ink); }
+.btn.ghost { background: transparent; color: var(--ink); }
+.btn.ghost:hover { background: var(--ink); color: var(--paper); }
+.link { background: none; border: 0; padding: 0; font: 400 .8rem/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--ink); cursor: pointer; border-bottom: 1px solid var(--rule); padding-bottom: 6px; transition: border-color .2s; }
+.link:hover { border-color: var(--ink); }
+
+/* 00 Header */
+.site-head { position: sticky; top: 0; z-index: 40; background: rgba(247,246,243,.92); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid transparent; transition: border-color .3s, box-shadow .3s; }
+.site-head.scrolled { border-color: var(--rule); }
+.head-in { display: flex; align-items: center; justify-content: space-between; gap: 24px; height: var(--head-h); transition: height .3s; }
+.site-head.scrolled .head-in { height: 60px; }
+.logo { text-decoration: none; display: flex; flex-direction: column; line-height: 1; }
+.logo b { font: 500 1.28rem/1 var(--serif); letter-spacing: .2em; }
+.logo small { font-size: .66rem; letter-spacing: .14em; color: var(--stone); margin-top: 6px; text-transform: uppercase; }
+.nav { display: flex; align-items: center; gap: clamp(18px, 2.4vw, 36px); }
+.nav a { font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; text-decoration: none; padding: 6px 0; border-bottom: 1px solid transparent; }
+.nav a:hover { border-color: var(--ink); }
+.nav .btn { min-height: 42px; padding: 0 20px; font-size: .74rem; }
+.burger { display: none; width: 48px; height: 48px; border: 0; background: none; cursor: pointer; position: relative; margin-right: -12px; }
+.burger span { position: absolute; left: 13px; right: 13px; height: 1px; background: var(--ink); transition: transform .3s, top .3s; }
+.burger span:nth-child(1) { top: 20px; } .burger span:nth-child(2) { top: 28px; }
+.burger[aria-expanded="true"] span:nth-child(1) { top: 24px; transform: rotate(45deg); }
+.burger[aria-expanded="true"] span:nth-child(2) { top: 24px; transform: rotate(-45deg); }
+@media (max-width: 1023px) {
+  .burger { display: block; }
+  .nav { position: fixed; inset: 60px 0 auto 0; flex-direction: column; align-items: stretch; gap: 0; background: var(--paper); border-bottom: 1px solid var(--rule); padding: 8px var(--gut) 28px; transform: translateY(-8px); opacity: 0; visibility: hidden; transition: opacity .25s, transform .25s, visibility .25s; }
+  .nav.open { opacity: 1; visibility: visible; transform: none; }
+  .nav a { padding: 16px 0; border-bottom: 1px solid var(--rule); font-size: .85rem; }
+  .nav .btn { margin-top: 20px; min-height: 52px; border-bottom: 1px solid var(--ink); }
+}
+
+/* 01 Hero */
+.hero { padding: clamp(28px, 4vw, 48px) 0 clamp(64px, 8vw, 112px); }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(28px, 4vw, 64px); align-items: end; }
+.hero h1 { font-size: clamp(2.6rem, 6vw, 5.4rem); line-height: 1.02; margin: 22px 0 26px; }
+.hero h1 span { display: block; }
+.hero .sub { font-size: 1.1rem; max-width: 34ch; color: #3b3c3a; }
+.hero .lines { display: flex; flex-direction: column; gap: 6px; margin: 28px 0 34px; padding-top: 18px; border-top: 1px solid var(--rule); font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; color: var(--stone); }
+.ctas { display: flex; flex-wrap: wrap; gap: 14px; }
+.hero-img { aspect-ratio: 4 / 3.3; overflow: hidden; background: var(--mist); }
+.hero-img img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-img { order: -1; aspect-ratio: 4 / 3; margin: 0 calc(var(--gut) * -1); }
+}
+
+/* Section frame */
+section.block { padding: clamp(72px, 9vw, 128px) 0; border-top: 1px solid var(--rule); }
+.sec-head { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(20px, 4vw, 64px); align-items: end; margin-bottom: clamp(36px, 5vw, 64px); }
+.sec-head h2 { margin-top: 18px; }
+.sec-head .intro { color: #3b3c3a; max-width: 58ch; }
+@media (max-width: 900px) { .sec-head { grid-template-columns: 1fr; } }
+
+/* 02 Projects */
+.filters { display: flex; gap: 6px; flex-wrap: wrap; }
+.filters button { min-height: 40px; padding: 0 18px; background: transparent; border: 1px solid var(--rule); font: 400 .74rem/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; cursor: pointer; color: var(--stone); transition: all .2s; }
+.filters button[aria-pressed="true"] { border-color: var(--ink); color: var(--ink); }
+.filters button:hover { color: var(--ink); }
+.proj-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: clamp(20px, 2.4vw, 36px) clamp(16px, 2vw, 28px); }
+.proj { grid-column: span 2; }
+.proj:nth-child(1), .proj:nth-child(2) { grid-column: span 3; }
+.proj button { display: block; width: 100%; padding: 0; border: 0; background: none; text-align: left; cursor: pointer; color: inherit; font: inherit; }
+.proj .ph { overflow: hidden; aspect-ratio: 4 / 3; background: var(--mist); position: relative; }
+.proj .ph img { width: 100%; height: 100%; object-fit: cover; transition: transform 1s cubic-bezier(.2,.7,.2,1); }
+.proj button:hover img { transform: scale(1.035); }
+.proj .count { position: absolute; right: 12px; bottom: 12px; background: rgba(247,246,243,.9); font-size: .7rem; letter-spacing: .14em; padding: 6px 10px; text-transform: uppercase; }
+.proj .meta { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-top: 14px; }
+.proj h3 { font-size: 1.5rem; }
+.proj .loc { font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--stone); text-align: right; }
+.proj .type { font-size: .82rem; color: var(--stone); margin-top: 2px; }
+.proj[hidden] { display: none; }
+@media (max-width: 1023px) { .proj, .proj:nth-child(1), .proj:nth-child(2) { grid-column: span 3; } }
+@media (max-width: 640px) { .proj, .proj:nth-child(1), .proj:nth-child(2) { grid-column: 1 / -1; } }
+.disclaimer { margin-top: 36px; font-size: .82rem; color: var(--stone); }
+
+/* 03 Expertise */
+.svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--ink); }
+.svc { padding: 30px 28px 36px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 48px 1fr; gap: 6px 10px; }
+.svc:not(:nth-child(3n+1)) { padding-left: 28px; border-left: 1px solid var(--rule); }
+.svc .n { font: 400 1rem/1.4 var(--serif); color: var(--stone); font-variant-numeric: tabular-nums; grid-row: span 2; padding-top: 4px; }
+.svc h3 { font-size: 1.5rem; }
+.svc p { color: #4a4b48; font-size: .95rem; }
+@media (max-width: 1023px) {
+  .svc-grid { grid-template-columns: repeat(2, 1fr); }
+  .svc:not(:nth-child(3n+1)) { padding-left: 0; border-left: 0; }
+  .svc:nth-child(even) { padding-left: 24px; border-left: 1px solid var(--rule); }
+}
+@media (max-width: 640px) { .svc-grid { grid-template-columns: 1fr; } .svc:nth-child(even) { padding-left: 0; border-left: 0; } }
+.reg-note { margin-top: 28px; display: flex; gap: 14px; font-size: .88rem; color: var(--stone); max-width: 80ch; }
+.reg-note::before { content: ""; width: 2px; background: var(--rule); flex: none; }
+
+/* 04 Process */
+.process { background: var(--white); }
+.timeline { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); position: relative; counter-reset: s; }
+.timeline::before { content: ""; position: absolute; left: 0; right: 0; top: 7px; height: 1px; background: var(--ink); }
+.timeline li { position: relative; padding: 38px 20px 0 0; counter-increment: s; }
+.timeline li::before { content: ""; position: absolute; top: 2px; left: 0; width: 11px; height: 11px; border-radius: 50%; background: var(--white); border: 1px solid var(--ink); }
+.timeline li:last-child::before { background: var(--ink); }
+.timeline .n { font: 400 2.6rem/1 var(--serif); color: var(--rule); display: block; margin-bottom: 14px; font-variant-numeric: tabular-nums; }
+.timeline .n::before { content: "0" counter(s); }
+.timeline h3 { font-size: 1.32rem; }
+.process .supp { margin-top: clamp(40px, 5vw, 64px); max-width: 62ch; font-size: 1.06rem; color: #3b3c3a; }
+@media (max-width: 1023px) {
+  .timeline { grid-template-columns: 1fr; }
+  .timeline::before { left: 5px; right: auto; top: 6px; bottom: 6px; width: 1px; height: auto; }
+  .timeline li { padding: 0 0 30px 40px; display: flex; align-items: baseline; gap: 18px; }
+  .timeline li::before { top: 8px; }
+  .timeline .n { font-size: 1.6rem; margin: 0; min-width: 2.2ch; }
+}
+
+/* 05 Packages */
+.pkg-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--rule); background: var(--white); }
+.pkg { padding: 30px 26px 30px; display: flex; flex-direction: column; gap: 14px; border-left: 1px solid var(--rule); min-height: 100%; }
+.pkg:first-child { border-left: 0; }
+.pkg .top { display: flex; justify-content: space-between; align-items: baseline; font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; color: var(--stone); }
+.pkg .num { font: 400 2.8rem/1 var(--serif); color: var(--ink); font-variant-numeric: tabular-nums; }
+.pkg h3 { font-size: 1.6rem; min-height: 2.2em; display: flex; align-items: flex-end; }
+.pkg .price { font-size: .95rem; font-weight: 400; border-top: 1px solid var(--rule); padding-top: 14px; }
+.pkg .price span { display: block; }
+.pkg .benefit { color: #4a4b48; font-size: .95rem; flex: 1; }
+.pkg .inv { font-size: .74rem; color: var(--stone); letter-spacing: .04em; }
+.pkg .link { align-self: flex-start; margin-top: 6px; }
+@media (max-width: 1023px) {
+  .pkg-grid { grid-template-columns: repeat(2, 1fr); }
+  .pkg:nth-child(3) { border-left: 0; }
+  .pkg:nth-child(n+3) { border-top: 1px solid var(--rule); }
+}
+@media (max-width: 767px) {
+  .pkg-grid { grid-template-columns: 1fr; }
+  .pkg { border-left: 0; }
+  .pkg + .pkg { border-top: 1px solid var(--rule); }
+  .pkg h3 { min-height: 0; }
+  .pkg .link { min-height: 44px; display: inline-flex; align-items: center; }
+}
+.pkg-foot { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 32px; align-items: center; margin-top: 40px; }
+.pkg-foot p { font-size: 1.08rem; max-width: 56ch; }
+.pkg-foot .ctas { justify-content: flex-end; }
+.footnote { margin-top: 26px; font-size: .82rem; color: var(--stone); }
+@media (max-width: 900px) { .pkg-foot { grid-template-columns: 1fr; } .pkg-foot .ctas { justify-content: flex-start; } }
+
+/* 06 About */
+.about-grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 6fr); gap: clamp(32px, 6vw, 96px); align-items: center; }
+.about-img { aspect-ratio: 4 / 5; overflow: hidden; background: var(--mist); }
+.about-img img { width: 100%; height: 100%; object-fit: cover; }
+.about h2 { margin: 18px 0 28px; }
+.about p.lead { font-size: 1.1rem; max-width: 50ch; color: #3b3c3a; }
+.locs { list-style: none; padding: 0; margin: 36px 0 0; display: flex; flex-wrap: wrap; border-top: 1px solid var(--rule); }
+.locs li { font: 400 1.35rem/1 var(--serif); padding: 18px 22px 0 0; }
+.locs li { position: relative; } .locs li:not(:last-child)::after { content: "·"; color: var(--stone); margin-left: 22px; }
+@media (max-width: 900px) { .about-grid { grid-template-columns: 1fr; } .about-img { aspect-ratio: 4 / 3; } }
+
+/* 07 Contact */
+.contact { background: var(--ink); color: var(--paper); border-top: 0 !important; }
+.contact .eyebrow { color: #a9a8a2; }
+.contact .eyebrow::after { background: #4a4b48; }
+.contact-grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: clamp(32px, 6vw, 96px); }
+.contact h2 { margin: 18px 0 22px; }
+.contact .intro { color: #c9c7c0; max-width: 40ch; }
+.contact-list { list-style: none; padding: 0; margin: 40px 0 0; display: grid; gap: 0; }
+.contact-list li { border-top: 1px solid #3e3f3c; padding: 16px 0; display: grid; grid-template-columns: 110px 1fr; gap: 12px; font-size: .95rem; }
+.contact-list li span { font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; color: #a9a8a2; padding-top: 4px; }
+.contact-list a { text-decoration: none; border-bottom: 1px solid #5a5b57; }
+.contact-list a:hover { border-color: var(--paper); }
+form { display: grid; grid-template-columns: 1fr 1fr; gap: 22px 24px; }
+.f { display: flex; flex-direction: column; gap: 8px; }
+.f.full { grid-column: 1 / -1; }
+.f label, .f legend { font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; color: #c9c7c0; }
+.f label i { font-style: normal; color: var(--paper); }
+.f input, .f select, .f textarea { font: 300 1rem/1.4 var(--sans); color: var(--paper); background: transparent; border: 0; border-bottom: 1px solid #5a5b57; padding: 10px 0; border-radius: 0; min-height: 46px; width: 100%; -webkit-appearance: none; appearance: none; transition: border-color .2s; }
+.f select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23c9c7c0'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 4px center; padding-right: 24px; }
+.f select option { color: var(--ink); }
+.f textarea { min-height: 120px; resize: vertical; }
+.f input:focus, .f select:focus, .f textarea:focus { outline: none; border-color: var(--paper); }
+.f input:focus-visible, .f select:focus-visible, .f textarea:focus-visible { outline: 1px solid var(--paper); outline-offset: 4px; }
+.f .err { font-size: .8rem; color: #f1b7a5; min-height: 0; }
+.f.invalid input, .f.invalid textarea, .f.invalid select { border-color: #f1b7a5; }
+.f input[type="file"] { border-bottom-style: dashed; padding: 12px 0; font-size: .88rem; }
+.f input[type="file"]::file-selector-button { font: 400 .72rem/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; background: transparent; color: var(--paper); border: 1px solid #5a5b57; padding: 10px 14px; margin-right: 14px; cursor: pointer; }
+.hint { font-size: .78rem; color: #a9a8a2; }
+.consent { grid-column: 1 / -1; display: flex; gap: 14px; align-items: flex-start; font-size: .9rem; color: #c9c7c0; }
+.consent input { width: 20px; height: 20px; margin-top: 3px; accent-color: var(--paper); flex: none; }
+.consent button { background: none; border: 0; padding: 0; color: var(--paper); font: inherit; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.hp { position: absolute; left: -9999px; }
+.contact .btn { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+.contact .btn:hover { background: transparent; color: var(--paper); }
+.form-actions { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
+.status { grid-column: 1 / -1; border: 1px solid #5a5b57; padding: 22px 24px; display: none; }
+.status.show { display: block; }
+.status h3 { font-size: 1.6rem; margin-bottom: 8px; }
+.status p { color: #c9c7c0; font-size: .95rem; }
+.status p + p { margin-top: 10px; }
+.status a { color: var(--paper); }
+@media (max-width: 1023px) { .contact-grid { grid-template-columns: 1fr; } }
+@media (max-width: 640px) { form { grid-template-columns: 1fr; } .contact-list li { grid-template-columns: 1fr; gap: 2px; } }
+.site-foot { background: var(--ink); color: #a9a8a2; font-size: .82rem; }
+.foot-in { border-top: 1px solid #3e3f3c; padding-top: 28px; padding-bottom: 36px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 32px; align-items: center; }
+.foot-in .logo b { color: var(--paper); font-size: 1.05rem; }
+.foot-in nav { display: flex; flex-wrap: wrap; gap: 8px 26px; }
+.foot-in a, .foot-in button { color: #c9c7c0; text-decoration: none; background: none; border: 0; padding: 0; font: inherit; cursor: pointer; }
+.foot-in a:hover, .foot-in button:hover { color: var(--paper); }
+
+/* Overlays: package panel, lightbox, privacy */
+.overlay { position: fixed; inset: 0; z-index: 80; display: none; }
+.overlay.open { display: block; }
+.overlay .scrim { position: absolute; inset: 0; background: rgba(34,35,34,.45); animation: fade .3s; }
+@keyframes fade { from { opacity: 0; } }
+@keyframes slide { from { transform: translateX(40px); opacity: 0; } }
+.panel { position: absolute; top: 0; right: 0; bottom: 0; width: min(560px, 100%); background: var(--paper); overflow-y: auto; padding: clamp(28px, 4vw, 48px); animation: slide .35s cubic-bezier(.2,.7,.2,1); display: flex; flex-direction: column; gap: 26px; }
+.panel:focus { outline: none; }
+.x { position: absolute; top: 14px; right: 14px; width: 48px; height: 48px; border: 0; background: none; cursor: pointer; color: inherit; }
+.x::before, .x::after { content: ""; position: absolute; left: 13px; right: 13px; top: 24px; height: 1px; background: currentColor; }
+.x::before { transform: rotate(45deg); } .x::after { transform: rotate(-45deg); }
+.panel .top { font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; color: var(--stone); padding-right: 48px; }
+.panel h2 { font-size: clamp(2rem, 4vw, 2.7rem); margin-top: 8px; }
+.panel .price { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 14px 0; font-weight: 400; }
+.panel .price span { display: block; }
+.panel h3 { font: 400 .74rem/1 var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--stone); margin-bottom: 10px; }
+.panel ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.panel ul li { padding-left: 22px; position: relative; }
+.panel ul li::before { content: ""; position: absolute; left: 0; top: .8em; width: 10px; height: 1px; background: var(--ink); }
+.panel .note { font-size: .86rem; color: var(--stone); }
+.panel .btn { align-self: flex-start; margin-top: 4px; }
+@media (max-width: 767px) { .panel { width: 100%; } .panel .btn { align-self: stretch; } }
+
+.lb { background: rgba(20,20,19,.96); color: var(--paper); }
+.lb .stage { position: absolute; inset: 64px 80px 96px; display: flex; align-items: center; justify-content: center; touch-action: pan-y; }
+.lb img { max-width: 100%; max-height: 100%; object-fit: contain; user-select: none; -webkit-user-drag: none; }
+.lb .cap { position: absolute; left: 80px; right: 80px; bottom: 28px; display: flex; justify-content: space-between; gap: 20px; font-size: .9rem; color: #c9c7c0; }
+.lb .cap b { font: 400 1.35rem/1.2 var(--serif); color: var(--paper); display: block; }
+.lb .ctr { font-variant-numeric: tabular-nums; letter-spacing: .12em; align-self: flex-end; }
+.lb .nav-b { position: absolute; top: 50%; transform: translateY(-50%); width: 56px; height: 56px; border: 1px solid #4a4b48; background: rgba(20,20,19,.6); color: var(--paper); cursor: pointer; border-radius: 50%; display: grid; place-items: center; }
+.lb .nav-b:hover { border-color: var(--paper); }
+.lb .prev { left: 14px; } .lb .next { right: 14px; }
+.lb .x { color: var(--paper); }
+@media (max-width: 767px) {
+  .lb .stage { inset: 64px 0 120px; }
+  .lb .cap { left: 20px; right: 20px; }
+  .lb .nav-b { top: auto; bottom: 64px; transform: none; width: 48px; height: 48px; }
+  .lb .prev { left: auto; right: 72px; } .lb .next { right: 16px; }
+  .lb .cap { bottom: 20px; flex-direction: column; gap: 4px; }
+}
+.privacy .panel { width: min(720px, 100%); }
+.privacy .panel h3 { margin: 6px 0 -14px; }
+.privacy .panel p { font-size: .95rem; }
+.draft-tag { display: inline-block; font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; border: 1px solid var(--stone); color: var(--stone); padding: 4px 8px; }
+body.locked { overflow: hidden; }
+.preview-bar { background: var(--mist); color: var(--stone); font-size: .76rem; text-align: center; padding: 8px var(--gut); letter-spacing: .02em; }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="preview-bar">Design preview · images are placeholders until project photographs are supplied</div>
+
+<!-- 00 Header -->
+<header class="site-head" id="top">
+  <div class="wrap head-in">
+    <a class="logo" href="#top" aria-label="MBERRY BURO, back to top"><b data-c="brand.name">MBERRY BURO</b><small data-c="brand.tagline">by Olha Malinko Design</small></a>
+    <button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
+    <nav class="nav" id="menu" aria-label="Main">
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#ways">Ways to Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="btn" href="#contact" data-cta="header">Discuss a Project</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<!-- 01 Hero -->
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Interior design bureau</p>
+      <h1 id="h1"><span>Renovation.</span> <span>Reconstruction.</span> <span>Turnkey Delivery.</span></h1>
+      <p class="sub" data-c="hero.sub">From concept and technical documentation to permits, construction coordination, and a completed interior.</p>
+      <p class="lines"><span data-c="hero.line1">Residential &amp; Commercial Spaces</span><span data-c="hero.line2">International Project Experience</span></p>
+      <div class="ctas">
+        <a class="btn" href="#contact" data-cta="hero">Tell Us About Your Project</a>
+        <a class="btn ghost" href="#projects">View Projects</a>
+      </div>
+    </div>
+    <div class="hero-img"><img id="hero-img" src="img/hero.svg" alt="" width="1200" height="800" fetchpriority="high"></div>
+  </div>
+</section>
+
+<!-- 02 Projects -->
+<section class="block" id="projects" aria-labelledby="h-projects">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Selected work</p><h2 id="h-projects" data-c="projects.heading">Spaces We Create</h2></div>
+      <div class="filters" role="group" aria-label="Filter projects" id="filters">
+        <button type="button" aria-pressed="true" data-f="all">All</button>
+        <button type="button" aria-pressed="false" data-f="residential">Residential</button>
+        <button type="button" aria-pressed="false" data-f="commercial">Commercial</button>
+      </div>
+    </div>
+    <div class="proj-grid" id="proj-grid"></div>
+    <p class="disclaimer">Project names, locations and images shown here are placeholders for layout review. They will be replaced with verified completed projects and approved photographs before launch.</p>
+  </div>
+</section>
+
+<!-- 03 Expertise -->
+<section class="block" id="services" aria-labelledby="h-services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Expertise</p><h2 id="h-services" data-c="expertise.heading">A Comprehensive Approach to Space</h2></div>
+      <p class="intro" data-c="expertise.intro">MBERRY BURO is an interior design bureau led by Olha Malinko. We develop concepts, layouts and technical solutions, coordinate specialists, and support projects through implementation.</p>
+    </div>
+    <div class="svc-grid" id="svc-grid"></div>
+    <p class="reg-note" data-c="expertise.note">Permits and regulated technical work are carried out in coordination with locally authorized architects, engineers and other qualified specialists.</p>
+  </div>
+</section>
+
+<!-- 04 Process -->
+<section class="block process" id="process" aria-labelledby="h-process">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Process</p></div>
+      <h2 id="h-process" data-c="process.heading">One Project. From the First Idea to a Finished Space.</h2>
+    </div>
+    <ol class="timeline" id="timeline"></ol>
+    <p class="supp" data-c="process.text">We coordinate architecture, interiors, engineering, and construction as one project. The specialist team depends on the property, project scope, and local requirements.</p>
+  </div>
+</section>
+
+<!-- 05 Ways to work -->
+<section class="block" id="ways" aria-labelledby="h-ways">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Ways to work</p><h2 id="h-ways" data-c="packages.heading">Choose Your Way to Work</h2></div>
+      <p class="intro" data-c="packages.sub">From one-off advice to comprehensive renovation and implementation support.</p>
+    </div>
+    <div class="pkg-grid" id="pkg-grid"></div>
+    <p class="footnote" data-c="packages.footnote">Final pricing is determined after reviewing the property and project requirements. All listed prices are starting rates.</p>
+    <div class="pkg-foot">
+      <p data-c="packages.help">Not sure which format suits your project? Share your floor plan, property size, photos, and a short brief. We’ll recommend the best approach.</p>
+      <div class="ctas"><a class="btn" href="#contact" data-cta="packages-advise" data-pkg="advise">Tell Us About Your Project</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 About -->
+<section class="block about" id="about" aria-labelledby="h-about">
+  <div class="wrap about-grid">
+    <div class="about-img"><img id="about-img" src="img/about.svg" alt="" loading="lazy" width="1200" height="800"></div>
+    <div>
+      <p class="eyebrow">About the bureau</p>
+      <h2 id="h-about" data-c="about.heading">Design Expertise Across Borders</h2>
+      <p class="lead" data-c="about.text">Led by Olha Malinko, MBERRY BURO brings a considered design approach to private homes and commercial spaces. We adapt each project to the requirements of its location and coordinate relevant specialists through the delivery process.</p>
+      <ul class="locs" id="locs" aria-label="Locations"></ul>
+    </div>
+  </div>
+</section>
+
+<!-- 07 Contact -->
+<section class="block contact" id="contact" aria-labelledby="h-contact">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="eyebrow">Enquiries</p>
+      <h2 id="h-contact" data-c="contact.heading">Tell Us About Your Project</h2>
+      <p class="intro" data-c="contact.text">Share a few details about your space and your goals. We’ll get in touch to discuss next steps.</p>
+      <ul class="contact-list" id="contact-list"></ul>
+    </div>
+    <form id="enquiry" novalidate>
+      <div class="f"><label for="f-name">Name <i>*</i></label><input id="f-name" name="name" autocomplete="name" required><span class="err" id="e-name"></span></div>
+      <div class="f"><label for="f-email">Email <i>*</i></label><input id="f-email" name="email" type="email" autocomplete="email" required><span class="err" id="e-email"></span></div>
+      <div class="f"><label for="f-phone">Phone / preferred messenger</label><input id="f-phone" name="phone" autocomplete="tel" placeholder="+420 … · WhatsApp, Telegram"></div>
+      <div class="f"><label for="f-loc">Country and city of property</label><input id="f-loc" name="location" placeholder="Prague, Czech Republic"></div>
+      <div class="f"><label for="f-type">Property type</label>
+        <select id="f-type" name="property_type"><option value="">Select</option><option>Apartment</option><option>House</option><option>Commercial</option><option>Other</option></select></div>
+      <div class="f"><label for="f-area">Area (m²)</label><input id="f-area" name="area" type="number" inputmode="decimal" min="1" step="any"><span class="err" id="e-area"></span></div>
+      <div class="f full"><label for="f-pkg">Service format</label>
+        <select id="f-pkg" name="package"></select></div>
+      <div class="f full"><label for="f-msg">Brief project description <i>*</i></label><textarea id="f-msg" name="message" required placeholder="What would you like to change, timing, budget range…"></textarea><span class="err" id="e-msg"></span></div>
+      <div class="f"><label for="f-files">Plans and images</label><input id="f-files" name="attachment" type="file" multiple accept=".jpg,.jpeg,.png,.pdf"><span class="hint">JPG, PNG or PDF · up to 10 MB in total</span><span class="err" id="e-files"></span></div>
+      <div class="f"><label for="f-link">Or a cloud-storage link</label><input id="f-link" name="cloud_link" type="url" placeholder="https://"><span class="err" id="e-link"></span></div>
+      <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="lead_source" id="f-source">
+      <label class="consent" for="f-consent"><input id="f-consent" type="checkbox" name="consent" required><span>I agree to the processing of my contact details and uploaded documents as described in the <button type="button" data-open="privacy">Privacy Policy</button>. <span class="err" id="e-consent" style="display:block;color:#f1b7a5"></span></span></label>
+      <div class="form-actions"><button class="btn" type="submit" id="submit">Send Enquiry</button><span class="hint">* Required fields</span></div>
+      <div class="status" id="status" role="status" aria-live="polite" tabindex="-1"></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-in">
+    <a class="logo" href="#top"><b>MBERRY BURO</b></a>
+    <nav aria-label="Footer">
+      <a href="#projects">Projects</a><a href="#services">Services</a><a href="#ways">Ways to Work</a><a href="#about">About</a>
+      <button type="button" data-open="privacy">Privacy Policy</button>
+    </nav>
+    <span id="copy">© 2026 MBERRY BURO · Olha Malinko Design</span>
+  </div>
+</footer>
+
+<!-- Package panel -->
+<div class="overlay" id="pkg-panel" aria-hidden="true">
+  <div class="scrim" data-close></div>
+  <div class="panel" role="dialog" aria-modal="true" aria-labelledby="pp-title" tabindex="-1">
+    <button class="x" type="button" data-close aria-label="Close package details"></button>
+    <div id="pp-body"></div>
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div class="overlay lb" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="lb-title">
+  <button class="x" type="button" data-close aria-label="Close gallery"></button>
+  <div class="stage" id="lb-stage"><img id="lb-img" src="" alt=""></div>
+  <button class="nav-b prev" type="button" aria-label="Previous image"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M11 3L5 9l6 6" fill="none" stroke="currentColor"/></svg></button>
+  <button class="nav-b next" type="button" aria-label="Next image"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M7 3l6 6-6 6" fill="none" stroke="currentColor"/></svg></button>
+  <div class="cap"><div><b id="lb-title"></b><span id="lb-cap"></span></div><span class="ctr" id="lb-ctr"></span></div>
+</div>
+
+<!-- Privacy policy -->
+<div class="overlay privacy" id="privacy" aria-hidden="true">
+  <div class="scrim" data-close></div>
+  <div class="panel" role="dialog" aria-modal="true" aria-labelledby="pv-title" tabindex="-1">
+    <button class="x" type="button" data-close aria-label="Close privacy policy"></button>
+    <span class="draft-tag">Draft for legal review</span>
+    <h2 id="pv-title">Privacy Policy</h2>
+    <p>This notice explains how MBERRY BURO (Olha Malinko Design) handles personal data submitted through this website. The final text, controller details and legal basis must be confirmed by the client before launch.</p>
+    <h3>What we collect</h3>
+    <p>Your name, email, phone or messenger handle, property location, property type and size, the service format you select, your project description, and any plans, photos or links you choose to share.</p>
+    <h3>Why we use it</h3>
+    <p>Only to reply to your enquiry, prepare a proposal and, if you engage us, to deliver the agreed services. We do not sell your data or use it for unrelated marketing.</p>
+    <h3>How long we keep it</h3>
+    <p>Enquiries that do not lead to a project are deleted within 12 months. Project records are kept for as long as required by applicable law.</p>
+    <h3>Your rights</h3>
+    <p>Under the GDPR and other applicable laws you may request access, correction, deletion or restriction of your data, or object to its processing, by writing to <span class="pv-email">hello@mberryburo.com</span>. You may also lodge a complaint with your local data protection authority.</p>
+    <h3>Analytics</h3>
+    <p>This website does not use analytics or marketing cookies. If analytics are added, they will only run after you give consent.</p>
+  </div>
+</div>
+
+<script type="application/json" id="content-inline">/*CONTENT*/</script>
+<script>
+(function () {
+  "use strict";
+  var C = JSON.parse(document.getElementById("content-inline").textContent);
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
+  var get = function (o, path) { return path.split(".").reduce(function (a, k) { return a && a[k]; }, o); };
+
+  function render(C) {
+    // Text bindings
+    $$("[data-c]").forEach(function (el) { var v = get(C, el.getAttribute("data-c")); if (typeof v === "string") el.textContent = v; });
+    if (C.meta) { document.title = C.meta.title || document.title; var md = $('meta[name="description"]'); if (md && C.meta.description) md.content = C.meta.description; }
+    var h = C.hero || {};
+    if (h.h1) { $("#h1").innerHTML = h.h1.split(/(?<=\.)\s+/).map(function (p) { return "<span>" + esc(p) + "</span>"; }).join(" "); }
+    if (h.image) { $("#hero-img").src = h.image; $("#hero-img").alt = h.imageAlt || ""; }
+    if (C.about && C.about.image) { $("#about-img").src = C.about.image; $("#about-img").alt = C.about.imageAlt || ""; }
+
+    // Projects
+    var P = C.projects.items;
+    $("#proj-grid").innerHTML = P.map(function (p, i) {
+      var cover = p.images[0];
+      return '<article class="proj" data-cat="' + esc(p.category) + '"><button type="button" data-proj="' + i + '" aria-label="Open gallery: ' + esc(p.name) + ', ' + p.images.length + ' images">' +
+        '<div class="ph"><img src="' + esc(cover.src) + '" alt="' + esc(cover.alt) + '" loading="lazy" width="1200" height="800"><span class="count">' + p.images.length + ' images</span></div>' +
+        '<div class="meta"><div><h3>' + esc(p.name) + '</h3><p class="type">' + esc(p.type) + '</p></div><p class="loc">' + esc(p.location || "") + '</p></div></button></article>';
+    }).join("");
+    var cats = {}; P.forEach(function (p) { cats[p.category] = 1; });
+    $("#filters").hidden = !(cats.residential && cats.commercial);
+
+    // Services
+    $("#svc-grid").innerHTML = C.expertise.services.map(function (s, i) {
+      return '<div class="svc"><span class="n">0' + (i + 1) + '</span><h3>' + esc(s.title) + '</h3><p>' + esc(s.text) + '</p></div>';
+    }).join("");
+
+    // Process
+    $("#timeline").innerHTML = C.process.steps.map(function (s) { return '<li><span class="n" aria-hidden="true"></span><h3>' + esc(s) + '</h3></li>'; }).join("");
+
+    // Packages
+    var K = C.packages.items;
+    $("#pkg-grid").innerHTML = K.map(function (k, i) {
+      return '<article class="pkg"><div class="top"><span class="num">' + esc(k.num) + '</span><span>' + esc(k.short) + '</span></div>' +
+        '<h3>' + esc(k.name) + '</h3>' +
+        '<p class="price">' + k.prices.map(function (p) { return '<span>' + esc(p) + '</span>'; }).join("") + '</p>' +
+        '<p class="benefit">' + esc(k.benefit) + '</p>' +
+        '<p class="inv">Client involvement: ' + esc(k.involvement) + '</p>' +
+        '<button class="link" type="button" data-pkg-open="' + i + '" aria-haspopup="dialog">Learn More +</button></article>';
+    }).join("");
+    $("#f-pkg").innerHTML = K.map(function (k) { return '<option value="' + esc(k.id) + '">' + esc(k.num + " · " + k.name) + '</option>'; }).join("") + '<option value="advise" selected>Please advise</option>';
+
+    // About
+    $("#locs").innerHTML = C.about.locations.map(function (l) { return "<li>" + esc(l) + "</li>"; }).join("");
+
+    // Contact
+    var c = C.contact, rows = [];
+    if (c.email) rows.push('<li><span>Email</span><a href="mailto:' + esc(c.email) + '">' + esc(c.email) + '</a></li>');
+    if (c.phone) rows.push('<li><span>Telephone</span><a href="tel:' + esc(c.phone.replace(/\s/g, "")) + '">' + esc(c.phone) + '</a></li>');
+    if (c.messenger) rows.push('<li><span>WhatsApp</span><a href="' + esc(c.messenger) + '" rel="noopener" target="_blank">Message us</a></li>');
+    if (c.instagram) rows.push('<li><span>Instagram</span><a href="' + esc(c.instagram) + '" rel="noopener" target="_blank">Follow our work</a></li>');
+    $("#contact-list").innerHTML = rows.join("");
+    $$(".pv-email").forEach(function (e) { e.textContent = c.email; });
+    $("#copy").textContent = "© " + new Date().getFullYear() + " " + (c.company || "MBERRY BURO");
+  }
+  render(C);
+
+  // Header: sticky compact + mobile menu
+  var head = $(".site-head"), burger = $(".burger"), menu = $("#menu");
+  var onScroll = function () { head.classList.toggle("scrolled", window.scrollY > 20); };
+  window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
+  function setMenu(open) { burger.setAttribute("aria-expanded", open); burger.setAttribute("aria-label", open ? "Close menu" : "Open menu"); menu.classList.toggle("open", open); }
+  burger.addEventListener("click", function () { setMenu(burger.getAttribute("aria-expanded") !== "true"); });
+  menu.addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false); });
+
+  // Filters
+  $("#filters").addEventListener("click", function (e) {
+    var b = e.target.closest("button"); if (!b) return;
+    $$("#filters button").forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
+    var f = b.getAttribute("data-f");
+    $$(".proj").forEach(function (p) { p.hidden = f !== "all" && p.getAttribute("data-cat") !== f; });
+  });
+
+  // Generic overlay with focus trap + focus return
+  var active = null;
+  function openOverlay(el, opener) {
+    active = { el: el, opener: opener || document.activeElement };
+    el.classList.add("open"); el.setAttribute("aria-hidden", "false"); document.body.classList.add("locked");
+    var f = el.querySelector(".panel") || el.querySelector(".x");
+    setTimeout(function () { (f || el).focus(); }, 20);
+  }
+  function closeOverlay() {
+    if (!active) return;
+    var a = active; active = null;
+    a.el.classList.remove("open"); a.el.setAttribute("aria-hidden", "true"); document.body.classList.remove("locked");
+    if (a.opener && a.opener.focus) a.opener.focus();
+  }
+  document.addEventListener("keydown", function (e) {
+    if (!active) return;
+    if (e.key === "Escape") { e.preventDefault(); closeOverlay(); return; }
+    if (active.el.id === "lightbox") { if (e.key === "ArrowRight") step(1); if (e.key === "ArrowLeft") step(-1); }
+    if (e.key === "Tab") {
+      var f = $$('a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])', active.el).filter(function (x) { return x.offsetParent !== null; });
+      if (!f.length) return;
+      var first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && (document.activeElement === first || !active.el.contains(document.activeElement))) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+  $$(".overlay").forEach(function (o) { o.addEventListener("click", function (e) { if (e.target.closest("[data-close]")) closeOverlay(); }); });
+
+  // Package panel
+  $("#pkg-grid").addEventListener("click", function (e) {
+    var b = e.target.closest("[data-pkg-open]"); if (!b) return;
+    var k = C.packages.items[+b.getAttribute("data-pkg-open")];
+    $("#pp-body").innerHTML =
+      '<p class="top">Package ' + esc(k.num) + ' · ' + esc(k.short) + '</p>' +
+      '<h2 id="pp-title">' + esc(k.name) + '</h2>' +
+      '<p class="price" style="margin-top:22px">' + k.prices.map(function (p) { return "<span>" + esc(p) + "</span>"; }).join("") + '</p>' +
+      '<div style="margin-top:26px"><h3>Best For</h3><p>' + esc(k.bestFor) + '</p></div>' +
+      '<div style="margin-top:26px"><h3>What’s Included</h3><ul>' + k.included.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + '</ul></div>' +
+      '<div style="margin-top:26px"><h3>What You Receive</h3><p>' + esc(k.receive) + '</p></div>' +
+      (k.note ? '<p class="note" style="margin-top:22px">' + esc(k.note) + '</p>' : '') +
+      '<p class="note" style="margin-top:14px">Client involvement: ' + esc(k.involvement) + '. ' + esc(C.packages.footnote) + '</p>' +
+      '<a class="btn" style="margin-top:28px" href="#contact" data-cta="panel-' + esc(k.id) + '" data-pkg="' + esc(k.id) + '">' + esc(k.cta) + '</a>';
+    openOverlay($("#pkg-panel"), b);
+  });
+
+  // CTAs -> form with package prefilled
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest('a[href="#contact"]'); if (!a) return;
+    e.preventDefault();
+    var pkg = a.getAttribute("data-pkg");
+    if (pkg) $("#f-pkg").value = pkg;
+    $("#f-source").value = a.getAttribute("data-cta") || "link";
+    if (active) { active.opener = null; closeOverlay(); }
+    setMenu(false);
+    $("#contact").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+    setTimeout(function () { $(pkg ? "#f-name" : "#f-name").focus({ preventScroll: true }); }, 500);
+  });
+
+  // Privacy
+  $$('[data-open="privacy"]').forEach(function (b) { b.addEventListener("click", function () { openOverlay($("#privacy"), b); }); });
+  if (location.hash === "#privacy") openOverlay($("#privacy"));
+
+  // Lightbox
+  var lb = $("#lightbox"), cur = { p: 0, i: 0 };
+  function show() {
+    var p = C.projects.items[cur.p], im = p.images[cur.i];
+    $("#lb-img").src = im.src; $("#lb-img").alt = im.alt;
+    $("#lb-title").textContent = p.name;
+    $("#lb-cap").textContent = [im.caption, p.type, p.location].filter(Boolean).join(" · ");
+    $("#lb-ctr").textContent = String(cur.i + 1).padStart(2, "0") + " / " + String(p.images.length).padStart(2, "0");
+    var multi = p.images.length > 1; $$(".nav-b", lb).forEach(function (b) { b.hidden = !multi; });
+  }
+  function step(d) { var n = C.projects.items[cur.p].images.length; cur.i = (cur.i + d + n) % n; show(); }
+  $("#proj-grid").addEventListener("click", function (e) {
+    var b = e.target.closest("[data-proj]"); if (!b) return;
+    cur = { p: +b.getAttribute("data-proj"), i: 0 }; show(); openOverlay(lb, b);
+  });
+  $(".prev", lb).addEventListener("click", function () { step(-1); });
+  $(".next", lb).addEventListener("click", function () { step(1); });
+  var sx = null, sy = null;
+  $("#lb-stage").addEventListener("touchstart", function (e) { sx = e.touches[0].clientX; sy = e.touches[0].clientY; }, { passive: true });
+  $("#lb-stage").addEventListener("touchend", function (e) {
+    if (sx === null) return; var dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy;
+    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) step(dx < 0 ? 1 : -1); sx = null;
+  });
+  $("#lb-stage").addEventListener("click", function (e) { if (e.target.id === "lb-stage") closeOverlay(); });
+
+  // Form
+  var form = $("#enquiry"), started = Date.now();
+  function setErr(id, msg) { var e = $("#e-" + id); if (e) e.textContent = msg || ""; var f = e && e.closest(".f"); if (f) f.classList.toggle("invalid", !!msg); }
+  function validate() {
+    var ok = true, first = null;
+    function bad(id, field, msg) { setErr(id, msg); if (msg) { ok = false; first = first || field; } }
+    var n = $("#f-name"), em = $("#f-email"), m = $("#f-msg"), ar = $("#f-area"), fl = $("#f-files"), ln = $("#f-link"), cs = $("#f-consent");
+    bad("name", n, n.value.trim().length < 2 ? "Please enter your name." : "");
+    bad("email", em, !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em.value.trim()) ? "Please enter a valid email address, e.g. name@example.com." : "");
+    bad("area", ar, ar.value && !(+ar.value > 0) ? "Area should be a number in square metres." : "");
+    bad("msg", m, m.value.trim().length < 10 ? "Please describe your project in a sentence or two." : "");
+    var size = 0, typeBad = false;
+    Array.prototype.forEach.call(fl.files || [], function (f) { size += f.size; if (!/\.(jpe?g|png|pdf)$/i.test(f.name)) typeBad = true; });
+    bad("files", fl, typeBad ? "Only JPG, PNG or PDF files can be attached." : size > 10 * 1024 * 1024 ? "Attachments exceed 10 MB. Please share a cloud-storage link instead." : "");
+    bad("link", ln, ln.value && !/^https?:\/\/\S+\.\S+/.test(ln.value.trim()) ? "Please enter a full link starting with https://" : "");
+    var ce = $("#e-consent"); ce.textContent = cs.checked ? "" : "Please confirm you agree to the Privacy Policy."; if (!cs.checked) { ok = false; first = first || cs; }
+    if (first) first.focus();
+    return ok;
+  }
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var st = $("#status"); st.classList.remove("show");
+    if (!validate()) return;
+    if (form._honey.value || Date.now() - started < 2500) return; // spam guard
+    var fd = new FormData(form);
+    var pkgSel = $("#f-pkg"); fd.set("package", pkgSel.options[pkgSel.selectedIndex].text);
+    if (!fd.get("lead_source")) fd.set("lead_source", "direct");
+    fd.set("_subject", "Website enquiry · " + fd.get("package") + " · " + fd.get("name"));
+    var endpoint = C.form && C.form.endpoint;
+    var btn = $("#submit");
+    function done(okSent) {
+      btn.disabled = false; btn.textContent = "Send Enquiry";
+      if (okSent) {
+        st.innerHTML = '<h3>Thank you, ' + esc(fd.get("name").split(" ")[0]) + '.</h3><p>Your enquiry has been received. We’ll get in touch at ' + esc(fd.get("email")) + ' to discuss next steps.</p>';
+        form.reset(); $("#f-pkg").value = "advise";
+      } else {
+        var body = ["Name: " + fd.get("name"), "Email: " + fd.get("email"), "Phone: " + (fd.get("phone") || ""), "Location: " + (fd.get("location") || ""), "Property type: " + (fd.get("property_type") || ""), "Area (m²): " + (fd.get("area") || ""), "Service format: " + fd.get("package"), "Cloud link: " + (fd.get("cloud_link") || ""), "", fd.get("message")].join("\n");
+        var mail = "mailto:" + C.contact.email + "?subject=" + encodeURIComponent(fd.get("_subject")) + "&body=" + encodeURIComponent(body);
+        st.innerHTML = '<h3>Your enquiry is ready to send</h3><p>' + (endpoint ? "We couldn’t reach the server just now." : "This is a design preview, so online submission is not connected yet. Nothing has been sent.") +
+          ' To send it now, email it to <strong>' + esc(C.contact.email) + '</strong>.</p><p><a href="' + esc(mail) + '">Open in your email app</a> · Selected format: ' + esc(fd.get("package")) + '</p>';
+      }
+      st.classList.add("show"); st.focus();
+    }
+    if (!endpoint) { done(false); return; }
+    btn.disabled = true; btn.textContent = "Sending…";
+    fetch(endpoint, { method: "POST", body: fd, headers: { Accept: "application/json" } })
+      .then(function (r) { done(r.ok); }).catch(function () { done(false); });
+  });
+
+  // Optional: load live content.json (CMS-edited) when hosted alongside the page
+  if (location.protocol.indexOf("http") === 0) {
+    fetch("content.json", { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) { if (j && JSON.stringify(j) !== JSON.stringify(C)) { C = j; render(C); } }).catch(function () {});
+  }
+})();
+</script>
+</body>
+</html>
